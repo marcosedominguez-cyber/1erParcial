@@ -38,6 +38,8 @@ def modificar_reserva(reservas, id_reserva, nuevo_inicio, nuevo_fin):
         return "CANCELADA"
     if not 0 <= nuevo_inicio < nuevo_fin <= 1440:
         return "HORARIO_INVALIDO"
+    if  objetivo["inicio"] < nuevo_inicio < objetivo["fin"] or objetivo["fin"] > nuevo_fin > objetivo["inicio"]:
+        return "CONFLICTO"
 
     # TODO: adaptar este comportamiento a los requisitos del examen.
     objetivo["inicio"] = nuevo_inicio

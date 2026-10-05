@@ -1,4 +1,4 @@
-# Parte II — Modificar una reserva sin perder la original
+0# Parte II — Modificar una reserva sin perder la original
 
 **Examen individual · 60 minutos · 50 puntos · Sin IA.**
 
